@@ -20,13 +20,13 @@ Altera or its authorized distributors.  Please refer to the
 applicable agreement for further details.
 */
 
-VECTOR("C:/Users/1363145/Desktop/projetos/Tp1_ula/tp1_Ula.vwf")
+VECTOR("C:/Users/lucas/OneDrive/Área de Trabalho/Projetos/Vhdl - Sistemas Reconfiguraveis/Trabalho 1/ULA_vhdl/tp1_Ula.vwf")
 {
 	ZOOM{
 		ZBEGIN = 0;
-		ZEND = 36246;
-		NUMERATOR = 842;
-		DENOMINATOR = 36246;
+		ZEND = 0;
+		NUMERATOR = 0;
+		DENOMINATOR = 0;
 		TOP_INDEX = 0;
 	}
 	CLOCK{

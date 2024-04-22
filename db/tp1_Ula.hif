@@ -31,7 +31,7 @@ ON
 # case_insensitive
 # source_file
 tp1_ula.vhd
-8049b69c6ce4386347ec3a37fd8629c
+5845d03d9c9c5b9eb2a058c7ba2c9c
 5
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -47,7 +47,7 @@ ON
 |
 }
 # lmf
-|altera|91sp2|quartus|lmf|maxplus2.lmf
+d:|downloads|quartus|lmf|maxplus2.lmf
 a36c8ec425c8a2589af98b2d4daabc3
 # macro_sequence
 

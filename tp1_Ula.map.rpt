@@ -1,5 +1,5 @@
 Analysis & Synthesis report for tp1_Ula
-Thu Apr 18 21:13:48 2024
+Mon Apr 22 18:44:44 2024
 Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
@@ -41,13 +41,13 @@ applicable agreement for further details.
 +------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                 ;
 +-------------------------------+----------------------------------------------+
-; Analysis & Synthesis Status   ; Successful - Thu Apr 18 21:13:48 2024        ;
+; Analysis & Synthesis Status   ; Successful - Mon Apr 22 18:44:44 2024        ;
 ; Quartus II Version            ; 9.1 Build 350 03/24/2010 SP 2 SJ Web Edition ;
 ; Revision Name                 ; tp1_Ula                                      ;
 ; Top-level Entity Name         ; tp1_Ula                                      ;
 ; Family                        ; Stratix II                                   ;
 ; Logic utilization             ; N/A                                          ;
-;     Combinational ALUTs       ; 64                                           ;
+;     Combinational ALUTs       ; 80                                           ;
 ;     Dedicated logic registers ; 0                                            ;
 ; Total registers               ; 0                                            ;
 ; Total pins                    ; 32                                           ;
@@ -145,18 +145,18 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 ; Processors                 ; Number ;
 +----------------------------+--------+
-; Number detected on machine ; 4      ;
+; Number detected on machine ; 6      ;
 ; Maximum allowed            ; 1      ;
 +----------------------------+--------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                       ;
-+----------------------------------+-----------------+-----------------+-------------------------------------------------------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                          ;
-+----------------------------------+-----------------+-----------------+-------------------------------------------------------+
-; tp1_Ula.vhd                      ; yes             ; User VHDL File  ; C:/Users/1363145/Desktop/projetos/Tp1_ula/tp1_Ula.vhd ;
-+----------------------------------+-----------------+-----------------+-------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                   ;
++----------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------------------------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                                                      ;
++----------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------------------------+
+; tp1_Ula.vhd                      ; yes             ; User VHDL File  ; C:/Users/lucas/OneDrive/Área de Trabalho/Projetos/Vhdl - Sistemas Reconfiguraveis/Trabalho 1/ULA_vhdl/tp1_Ula.vhd ;
++----------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------------------------+
 
 
 +-----------------------------------------------------------+
@@ -164,37 +164,37 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +-----------------------------------------------+-----------+
 ; Resource                                      ; Usage     ;
 +-----------------------------------------------+-----------+
-; Estimated ALUTs Used                          ; 64        ;
+; Estimated ALUTs Used                          ; 80        ;
 ; Dedicated logic registers                     ; 0         ;
 ;                                               ;           ;
-; Estimated ALUTs Unavailable                   ; 16        ;
+; Estimated ALUTs Unavailable                   ; 12        ;
 ;                                               ;           ;
-; Total combinational functions                 ; 64        ;
+; Total combinational functions                 ; 80        ;
 ; Combinational ALUT usage by number of inputs  ;           ;
-;     -- 7 input functions                      ; 0         ;
-;     -- 6 input functions                      ; 16        ;
-;     -- 5 input functions                      ; 11        ;
+;     -- 7 input functions                      ; 3         ;
+;     -- 6 input functions                      ; 9         ;
+;     -- 5 input functions                      ; 17        ;
 ;     -- 4 input functions                      ; 5         ;
-;     -- <=3 input functions                    ; 32        ;
+;     -- <=3 input functions                    ; 46        ;
 ;                                               ;           ;
 ; Combinational ALUTs by mode                   ;           ;
-;     -- normal mode                            ; 36        ;
-;     -- extended LUT mode                      ; 0         ;
+;     -- normal mode                            ; 48        ;
+;     -- extended LUT mode                      ; 3         ;
 ;     -- arithmetic mode                        ; 19        ;
-;     -- shared arithmetic mode                 ; 9         ;
+;     -- shared arithmetic mode                 ; 10        ;
 ;                                               ;           ;
-; Estimated ALUT/register pairs used            ; 80        ;
+; Estimated ALUT/register pairs used            ; 92        ;
 ;                                               ;           ;
 ; Total registers                               ; 0         ;
 ;     -- Dedicated logic registers              ; 0         ;
 ;     -- I/O registers                          ; 0         ;
 ;                                               ;           ;
-; Estimated ALMs:  partially or completely used ; 40        ;
+; Estimated ALMs:  partially or completely used ; 46        ;
 ;                                               ;           ;
 ; I/O pins                                      ; 32        ;
-; Maximum fan-out node                          ; op_sel[1] ;
-; Maximum fan-out                               ; 31        ;
-; Total fan-out                                 ; 277       ;
+; Maximum fan-out node                          ; op_sel[0] ;
+; Maximum fan-out                               ; 25        ;
+; Total fan-out                                 ; 324       ;
 ; Average fan-out                               ; 2.89      ;
 +-----------------------------------------------+-----------+
 
@@ -204,7 +204,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+---------------------+--------------+
 ; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
 +----------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+---------------------+--------------+
-; |tp1_Ula                   ; 64 (64)           ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 32   ; 0            ; |tp1_Ula            ; work         ;
+; |tp1_Ula                   ; 80 (80)           ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 32   ; 0            ; |tp1_Ula            ; work         ;
 +----------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -229,8 +229,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
-; 10:1               ; 7 bits    ; 42 ALUTs      ; 35 ALUTs             ; 7 ALUTs                ; No         ; |tp1_Ula|Mux4              ;
-; 1:1                ; 8 bits    ; 0 ALUTs       ; 0 ALUTs              ; 0 ALUTs                ; No         ; |tp1_Ula|Add0              ;
+; 12:1               ; 6 bits    ; 48 ALUTs      ; 36 ALUTs             ; 12 ALUTs               ; No         ; |tp1_Ula|Mux3              ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
 
 
@@ -240,23 +239,23 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
-    Info: Processing started: Thu Apr 18 21:13:46 2024
+    Info: Processing started: Mon Apr 22 18:44:43 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off tp1_Ula -c tp1_Ula
 Info: Found 2 design units, including 1 entities, in source file tp1_ula.vhd
     Info: Found design unit 1: tp1_Ula-arch
     Info: Found entity 1: tp1_Ula
 Info: Elaborating entity "tp1_Ula" for the top level hierarchy
-Info (10041): Inferred latch for "v_out" at tp1_Ula.vhd(54)
+Info (10041): Inferred latch for "v_out" at tp1_Ula.vhd(57)
 Warning: Output pins are stuck at VCC or GND
     Warning (13410): Pin "v_out" is stuck at VCC
-Info: Implemented 96 device resources after synthesis - the final resource count might be different
+Info: Implemented 112 device resources after synthesis - the final resource count might be different
     Info: Implemented 21 input pins
     Info: Implemented 11 output pins
-    Info: Implemented 64 logic cells
+    Info: Implemented 80 logic cells
 Info: Quartus II Analysis & Synthesis was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 249 megabytes
-    Info: Processing ended: Thu Apr 18 21:13:48 2024
-    Info: Elapsed time: 00:00:02
+    Info: Peak virtual memory: 242 megabytes
+    Info: Processing ended: Mon Apr 22 18:44:44 2024
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
 
